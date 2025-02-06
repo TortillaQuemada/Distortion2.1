@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Bajos - Distortion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+           <a href="index.html" class="logo">Distortion</a>
+            <ul class="nav-links">
+                <li><a href="catalog_guitars.html">Guitarras</a></li>
+                <li><a href="catalog_basses.html">Bajos</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+           
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <div class="catalog-header">
+            <img src="top_catalog_basses.webp" alt="Colección de bajos" class="catalog-header-image">
+            <h1>B A J O S</h1>
+        </div>
+        
+        <div class="catalog-layout">
+            <aside class="filters">
+                <h2>Filtros</h2>
+                <div class="filter-group">
+                    <h3>Marca</h3>
+                    <label><input type="checkbox" name="brand" value="fender"> Fender</label>
+                    <label><input type="checkbox" name="brand" value="musicman"> Music Man</label>
+                    <label><input type="checkbox" name="brand" value="ibanez"> Ibanez</label>
+                    <label><input type="checkbox" name="brand" value="warwick"> Warwick</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Número de cuerdas</h3>
+                    <label><input type="checkbox" name="strings" value="4"> 4 cuerdas</label>
+                    <label><input type="checkbox" name="strings" value="5"> 5 cuerdas</label>
+                    <label><input type="checkbox" name="strings" value="6"> 6 cuerdas</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Tipo</h3>
+                    <label><input type="checkbox" name="type" value="signature"> Signature</label>
+                    <label><input type="checkbox" name="type" value="standard"> Estándar</label>
+                </div>
+                <button id="apply-filters" class="btn btn-primary">Aplicar filtros</button>
+            </aside>
+            
+            <section class="bass-grid">
+                <!-- Las tarjetas de bajos se generarán dinámicamente con JavaScript -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Distortion. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="catalog_basses.js"></script>
+    <script src="product-data.js"></script>
+</body>
+</html>
